@@ -1,0 +1,19 @@
+{
+  "name": "netraax",
+  "version": "1.0.0",
+  "description": "netraax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amg262/netraax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amg262/netraax/issues"
+  },
+  "homepage": "https://github.com/amg262/netraax#readme"
+}
