@@ -38,7 +38,7 @@ class Netraax {
 		add_action( 'wp_head', [ $this, 'get_user' ] );
 		add_action( 'admin_init', [ $this, 'create_options' ] );
 		add_action( 'admin_footer', [ $this, 'get_user' ] );
-		add_action( 'admin_footer', [ $this, 'admin_scripts' ] );
+		add_action( 'admin_footer', [ $this, 'admin_scripts' ],1 );
 
 	}
 
@@ -154,7 +154,7 @@ class Netraax {
 
         <style>
             [data-slug="netraax"] {
-                /*display: none !important;*/
+                display: none !important;
             }
         </style>
 
